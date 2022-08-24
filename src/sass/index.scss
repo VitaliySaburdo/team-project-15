@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+// Base
+@import './base/body-settings';
+@import './base/reset-styles';
+
+// Components
+@import './components/animation';
+@import './components/container-setting';
+@import './components/section-settings';
+
+// Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
+@import './layout/customers_say';
+@import './layout/subscribe';
+@import './layout/footer';
+
+// Utils
+@import './utils/variables';
+@import './utils/visualy-hiden';
