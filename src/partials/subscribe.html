@@ -1,0 +1,60 @@
+<div class="subscribe">
+  <div>
+    <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
+    <form class="subscribe-form">
+      <label
+        for="subscribe-e-mail"
+        class="subscribe-input__email-field"
+      ></label>
+      <input
+        type="email"
+        class="subscribe-input__email"
+        name="e-mail"
+        id="subscribe-e-mail"
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        required
+      />
+      <button type="submit" class="subscribe-input__button">Subscribe</button>
+    </form>
+  </div>
+  <div class="banan">
+    <picture>
+      <source
+        srcset="
+          ./images/Subscribe-banan/banan-desctop1x.jpg 1x,
+          ./images/Subscribe-banan/banan-desctop2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/Subscribe-banan/banan-tablet1x.jpg 1x,
+          ./images/Subscribe-banan/banan-tablet2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="
+          ./images/Subscribe-banan/banan-mobile1x.jpg 1x,
+          ./images/Subscribe-banan/banan-mobile2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+        type="image/jpeg"
+      />
+      <img
+        class="banan__img"
+        src="./images/Subscribe-banan/banan-desctop2x.jpg"
+        alt="Banan"
+        width="608"
+        height="266"
+      />
+    </picture>
+  </div>
+</div>
