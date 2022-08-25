@@ -39,8 +39,8 @@
 }
 .hero__img {
   position: absolute;
-  top: calc((580 - 528) / 2);
-  left: ((608 - 528) / 2);
+  top: 26;
+  left: 40;
 }
 .hero__btn {
   @extend %btn;
