@@ -25,22 +25,29 @@
   margin-bottom: 40px;
 }
 .hero__slider {
+  position: relative;
   width: 608px;
-  height: 550px;
   margin-top: 14px;
 }
 .slider__controls {
+  position: relative;
   width: 580px;
   height: 580px;
+  margin: 0 auto;
+  border: 26px solid #ffe550;
+  border-radius: 50%;
 }
-
+.hero__img {
+  position: absolute;
+  top: calc((580 - 528) / 2);
+  left: ((608 - 528) / 2);
+}
 .hero__btn {
   @extend %btn;
 }
 
 .slider__btn--right {
-  position: absolute;
-  top: 146px;
+  top: 266;
   right: 0;
   width: 28px;
   height: 34px;
@@ -49,8 +56,7 @@
   border-radius: 4px;
 }
 .slider__btn--left {
-  position: absolute;
-  top: 146px;
+  top: 266;
   left: 0;
   width: 28px;
   height: 34px;
