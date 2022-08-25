@@ -10,7 +10,7 @@
 .hero__group {
   width: 502px;
   margin-top: 159px;
-  margin-right: 138px;
+  margin-right: 137px;
 }
 
 .hero__title {
@@ -24,19 +24,16 @@
   line-height: 150%;
   margin-bottom: 40px;
 }
-
 .hero__slider {
-  position: relative;
-  width: 320px;
-  height: 320px;
+  width: 608px;
+  height: 550px;
   margin-top: 14px;
-  border: 14px solid #ffe550;
-  border-radius: 50%;
 }
 .slider__controls {
-  width: 100%;
-  height: 100%;
+  width: 580px;
+  height: 580px;
 }
+
 .hero__btn {
   @extend %btn;
 }
