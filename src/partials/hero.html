@@ -13,27 +13,48 @@
     <ul class="slider__controls list">
       <li class="slider__item-controls">
         <button class="slider__btn--right" type="button">
-          <svg width="16" height="29" class="slider__btn--icon">
+          <svg class="slider__btn--icon">
             <use href="./images/sprite.svg#btn-left"></use>
           </svg>
         </button>
       </li>
       <li class="slider__item-controls">
         <button class="slider__btn--left" type="button">
-          <svg width="16" height="29" class="slider__btn--icon">
+          <svg class="slider__btn--icon">
             <use href="./images/sprite.svg#btn-right"></use>
           </svg>
         </button>
       </li>
     </ul>
     <div class="hero__shell">
-      <img
-        src="./images/hero/img2@1xlg.png"
-        alt=""
-        class="hero__img"
-        height="528"
-        width="528"
-      />
+      <picture>
+        <!-- desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/img2@1x-lg.png 1x,
+            ./images/hero/img2@2x-lg.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 767px)"
+          srcset="
+            ./images/hero/img1@1x-md.png 1x,
+            ./images/hero/img1@2x-md.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          src="./images/hero/img2@1x-lg.png"
+          alt="Meetball and toast"
+          width="528"
+          height="528"
+        />
+      </picture>
     </div>
   </div>
 </section>
