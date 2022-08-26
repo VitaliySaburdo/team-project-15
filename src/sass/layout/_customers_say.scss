@@ -58,21 +58,25 @@
   background-color: coral;
   @media screen and (max-width: 767px) {
     max-width: 280px;
-    height: 247px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 336px;
-    height: 244px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 501px;
-    height: 227px;
   }
+}
+
+.customers-svg-list {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 28px;
 }
 
 .customers__txt {
   font-weight: 700;
   color: var(--primary-text-cl);
+  margin-bottom: 42px;
   @media screen and (max-width: 767px) {
     font-size: 16px;
     line-height: calc(19 / 16);
