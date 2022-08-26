@@ -3,20 +3,20 @@
 @import './base/reset-styles';
 
 // Components
-@import './components/animation';
 @import './components/container-setting';
+@import './components/animation';
 @import './components/btn';
 @import './components/mobile-menu';
 
 // Layout
 @import './layout/header';
-@import './layout/hero';
-@import './layout/offerings';
-@import './layout/favorites';
-@import './layout/customers_say';
-@import './layout/subscribe';
-@import './layout/footer';
+// @import './layout/hero';
+// @import './layout/offerings';
+// @import './layout/favorites';
+// @import './layout/customers_say';
+// @import './layout/subscribe';
+// @import './layout/footer';
 
-// Utils
-@import './utils/variables';
-@import './utils/visualy-hiden';
+// // Utils
+// @import './utils/variables';
+// @import './utils/visualy-hiden';
