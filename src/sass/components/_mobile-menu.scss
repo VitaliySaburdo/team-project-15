@@ -1,55 +1,15 @@
-.menu__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    right: 20px;
-    top: 22px;
-    padding: 0;
-    margin-left: auto;
-
-    width: 28px;
-    height: 28px;
-    padding: 0;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    // add
-    color: #7EB101;
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
-
-    .menu-overlay & {
-        position: absolute;
-    }
-}
-
-.menu__btn--hover {
-    // !!!
-    transition: fill var(--anim);
-
-    &:focus,
-    &:hover {
-        // !!!!
-        fill: #7EB101;
-        ;
-    }
-}
-
+// mobile-menu Olga Shapran
 .menu-overlay {
     position: fixed;
-    left: 170px;
+    right: 20px;
     top: 50px;
     z-index: 1000;
 
     width: 130px;
     height: 255px;
     // !!!
-    background: #FEFEFE;
+    background-color: var(--heder-bcg-cl);
+
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     border-radius: 30px 0px 30px 30px;
 
@@ -71,23 +31,9 @@
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    left: 170px;
-    z-index: 100;
-
-    width: 130px;
-    height: 255px;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    background-color: #FEFEFE;
-
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    border-radius: 30px 0px 30px 30px;
+    // display: flex;
+    // flex-direction: column;
+    // position: absolute;
 
     transform: translateX(100%);
     transition: transform var(--anim);
@@ -101,20 +47,48 @@
     }
 }
 
+.menu__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 4px;
+    top: 4px;
+    padding: 0;
+    margin-left: auto;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    // add
+    fill: var(--primary-text-cl);
+
+    box-shadow: inset 2px 1px 4px rgba(61, 61, 61, 0.1);
+
+    .menu-overlay & {
+        position: absolute;
+    }
+}
+
+.menu__list{
+   overflow: hidden;
+}
+
 .menu__item {
-    margin-bottom: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    
 
     &:hover,
     &:focus,
     &:active {
-        background-color: #BBF330;
-        ;
+        height: 100%;
+        width: 100%;
+        background-color: var(--menu-avtiv-border-cl);
+        
     }
-
-}
-
-.menu__item:last-child {
-    margin-bottom: 0px;
 }
 
 .menu__link {
