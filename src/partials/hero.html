@@ -10,6 +10,97 @@
     <button class="hero__btn" type="button">Order Now</button>
   </div>
   <div class="hero__slider">
+    <div class="hero__slider--container">
+      <div class="slider__line">
+        <!-- Slide 1 -->
+        <picture class="swiper-slide">
+          <!-- desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/img1@1x-lg.png 1x,
+              ./images/hero/img1@2x-lg.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <!-- tablet screen -->
+          <source
+            media="(min-width: 767px)"
+            srcset="
+              ./images/hero/img1@1x-md.png 1x,
+              ./images/hero/img1@2x-md.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <img
+            src="./images/hero/img1@1x-lg.png"
+            alt="Meetball and toast"
+            width="528"
+            height="528"
+          />
+        </picture>
+        <!-- Slide 2 -->
+        <picture class="swiper-slide">
+          <!-- desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/img2@1x-lg.png 1x,
+              ./images/hero/img2@2x-lg.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <!-- tablet screen -->
+          <source
+            media="(min-width: 767px)"
+            srcset="
+              ./images/hero/img2@1x-md.png 1x,
+              ./images/hero/img2@2x-md.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <img
+            src="./images/hero/img2@1x-lg.png"
+            alt="Meetball and toast"
+            width="528"
+            height="528"
+          />
+        </picture>
+        <!-- Slide 3 -->
+        <picture class="swiper-slide">
+          <!-- desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/img3@1x-lg.png 1x,
+              ./images/hero/img3@2x-lg.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <!-- tablet screen -->
+          <source
+            media="(min-width: 767px)"
+            srcset="
+              ./images/hero/img3@1x-md.png 1x,
+              ./images/hero/img3@2x-md.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <img
+            src="./images/hero/img3@1x-lg.png"
+            alt="Meetball and toast"
+            width="528"
+            height="528"
+          />
+        </picture>
+      </div>
+    </div>
     <ul class="slider__controls list">
       <li class="slider__item-controls">
         <button class="slider__btn--right swiper-button-next" type="button">
@@ -26,36 +117,5 @@
         </button>
       </li>
     </ul>
-    <div class="hero__shell swiper">
-      <!-- Slide 1 -->
-      <picture class="swiper-slide">
-        <!-- desktop screen -->
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/hero/img1@1x-lg.png 1x,
-            ./images/hero/img1@2x-lg.png 2x
-          "
-          type="image/jpg"
-        />
-
-        <!-- tablet screen -->
-        <source
-          media="(min-width: 767px)"
-          srcset="
-            ./images/hero/img1@1x-md.png 1x,
-            ./images/hero/img1@2x-md.png 2x
-          "
-          type="image/jpg"
-        />
-
-        <img
-          src="./images/hero/img1@1x-lg.png"
-          alt="Meetball and toast"
-          width="528"
-          height="528"
-        />
-      </picture>
-    </div>
   </div>
 </section>

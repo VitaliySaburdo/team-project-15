@@ -80,7 +80,7 @@
   @extend %btn;
 }
 
-.hero__shell {
+.hero__slider--container {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -92,14 +92,28 @@
   }
   position: absolute;
   z-index: 100;
+
   width: 580px;
   height: 580px;
   top: 0;
   left: 16;
   border: 26px solid var(--fill-bcg-cl);
   border-radius: 50%;
+
+  overflow: hidden;
 }
 
+.slider__line {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    height: 528px;
+    width: calc(528 * 3);
+    position: relative;
+    left: 0;
+
+    transition: all ease 1s;
+  }
+}
 .slider__btn--right {
   @media screen and (min-width: 767px) and (max-width: 1279px) {
     width: 34px;
