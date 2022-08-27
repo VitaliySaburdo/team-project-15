@@ -1,0 +1,28 @@
+/**
+  |============================
+  | Offerings section
+  |============================
+*/
+.offerings {
+  display: flex;
+}
+.offerings_img {
+  display: flex;
+  width: 550px;
+  height: 604px;
+  margin-right: 90px;
+  margin-top: 177px;
+  margin-left: 16px;
+  margin-bottom: 75px;
+}
+.offerings__box {
+  width: 573px;
+  height: 393px;
+  margin-top: 280px;
+}
+
+.offerings_img--decor {
+  width: 550px;
+  height: 550px;
+  margin-top: auto;
+}
