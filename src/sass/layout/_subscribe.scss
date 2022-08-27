@@ -2,58 +2,61 @@
     display: flex;
     background-color: #fefefe;
     position: relative;
-    // flex-wrap: wrap;
-    // outline: 1px solid red;
-
-
 
 }
 
 .subscribe-title {
-    // outline: 1px solid red;
+    display: block;
     font-family: var(--primary-font);
     text-transform: capitalize;
     color: var(--primary-text-cl);
-    margin-left: 20px;
-    margin-top: 112px;
+    margin-top: 95px;
     font-weight: 700;
     font-size: 28px;
-
-    width: 280px;
-
+    width: 100%;
     line-height: calc(37px/28px);
-
     margin-bottom: 20px;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 480px) {
+        height: auto;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
         line-height: calc(50px/42px);
         font-size: 42px;
         width: 656px;
-        margin-left: 17px;
-        margin-top: 180px;
+        margin-top: 156px;
 
 
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 46px;
     }
 }
 
 .subscribe-text {
-    // outline: 1px solid red;
     font-family: var(--primary-font);
-
+    margin-bottom: 40px;
     font-weight: 400;
-    width: 280px;
+    width: 100%;
     font-size: 14px;
     line-height: calc(16px/14px);
     color: var(--primary-text-cl);
-    margin-left: 20px;
-    margin-bottom: 40px;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 480px) {
+        height: auto;
+        width: 100%;
+    }
+
+
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: calc(24px/16px);
         width: 656px;
         margin-bottom: 24px;
-        margin-left: 17px;
+
 
 
     }
@@ -61,10 +64,8 @@
 
 
 .subscribe-input__email {
-    // outline: 1px solid red;
-
     font-family: var(--primary-font);
-    width: 279px;
+    width: 100%;
     height: 42px;
     font-style: normal;
     font-weight: 400;
@@ -72,92 +73,118 @@
     line-height: 1.5;
     align-items: center;
     color: var(--primary-text-cl);
-    border: 0.854167px solid var(--menu-border-cl);
+    border: 0.85px solid var(--menu-border-cl);
     border-radius: 30px;
     background-color: inherit;
     text-align: left;
-    padding-left: 12px;
-    margin-left: 21px;
+    margin-bottom: 20px;
+    padding: 11px;
+
+    &:not(:placeholder-shown):required:valid {
+        border-color: var(--line-border-cl);
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border-color: var(--fail-border-cl);
+    }
+
+
+
 
     &::placeholder {
         color: #505050;
     }
 
-    // @media screen and (min-width: 479px) {
-    //     width: 100%;
-    // }
+    @media screen and (min-width: 479px) {
+        height: auto;
+        width: 100%;
+    }
 
-    //  @media screen and (min-width: 480px) {
-    //      width: 450px;}
-
-    @media screen and (min-width: 767px) {
-        margin-left: 16px;
+    @media screen and (min-width: 768px) {
         width: 395px;
-        margin-bottom: 100px;
+        margin-bottom: 0;
 
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 36px;
     }
 }
 
 .subscribe-input__button {
-    // outline: 1px solid red;
     color: var(--primary-text-cl);
     border-radius: 30px;
     background-color: var(--menu-avtiv-border-cl);
     border: none;
     font-family: var(--primary-font);
-
-    justify-content: center;
+    float: right;
+    // justify-content: center;
     align-items: center;
-    width: 106px;
+    width: 103px;
     height: 42px;
-    margin-left: 197px;
-    margin-right: 20px;
-    margin-top: 20px;
+    // margin-left: 177px;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
     cursor: pointer;
-    margin-bottom: 60px;
 
+    &:hover,
+    &:focus {
+        background-color: var(--accent-btn-cl);
+    }
+
+
+    @media screen and (min-width: 479px) {}
 
 
     @media screen and (min-width: 767px) {
-
+        float: none;
         margin-left: 32px;
-        margin-top: 24px;
+
 
     }
 
+    @media screen and (min-width: 1280px) {
+        margin-top: 0;
+
+    }
 }
 
 .banan {
-    // outline: 1px solid red;
     position: absolute;
-    left: 20px;
-    right: 20px;
-    top: 17px;
+    left: 60px;
+    top: 0;
     bottom: 17px;
     width: 161px;
+    height: auto;
+    // outline: 1px solid green;
+    z-index: 0;
+
 
     @media screen and (min-width: 480px) {
         width: 280px;
+        position: absolute;
+        left: 140px;
+        top: 0;
+        bottom: 17px;
+        width: 161px;
+        height: auto;
+
     }
 
-    @media screen and (min-width: 767px) {
-        // position: absolute;
-        // left: 455px;
-        // right: 32px;
-        // top: 46px;
-        // bottom: 20px;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        left: 423px;
+        height: 136px;
+        top: 0;
         width: 281px;
-        // height: auto;
-        // display: contents;
+
     }
 
     @media screen and (min-width: 1280px) {
         position: absolute;
-        left: 656px;
-        margin-top: 134px;
+        left: 702px;
+        margin-top: 0;
         width: 546px;
         height: 266px;
     }
