@@ -1,103 +1,113 @@
-.favorites-section {
+.favorites {
     padding: 60px 0;
-}
 
-.favorites-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    background-color: #fefefe;
+    
+    @media screen and (min-width: 768px) {
+        padding: 100px 0;
+}
 }
 
 .favorites__title {
-    margin: 0 auto;
-    min-width: 280px;
     margin-bottom: 20px;
-    text-align: center;
-    font-weight: 700;
+
     font-size: 28px;
-    line-height: 1.18;
-    text-transform: uppercase;
+    line-height: calc(33 / 28);
+    text-align: center;
+    text-transform: capitalize;
+
     color: var(--primary-text-cl);
 
 @media screen and (min-width: 768px) {
     font-size: 42px;
-    line-height: 1.17;
+    line-height: calc(49 / 42);
     }
+}
 
-.favorites {
-   
+.favorites__text {
+    margin-bottom: 60px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+
+    color: var(--primary-text-cl);
+
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+}
+
+@media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+}
+}
+
+.favorites_list {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-// items: 1;
 
-    @media screen and (min-width: 768px) {
-        padding: 100px 0;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 32px;
-    //    items: 2;
-    }
-
-    @media screen and (min-width: 1200px) {
-        flex-wrap: wrap;
-    //    items: 3;
-    }
-
-    .favorites__item {
-        // flex-basis: calc((100% - 20px) * (items - 1)) /items;
-   
-        @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 32px) * (2 - 1)) / 2;
-        }
-
-                @media screen and (min-width: 1200px) {
-                    flex-basis: calc((100% - 32px) * (3 - 1)) / 3;
-                    }
-    
-
-    .favorites__title {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 1.18;
-        color: var(--primary-text-cl);
-
-        @media screen and (min-width: 768px) {
-            font-size: 42px;
-            line-height: 1.17;
-        }
-    }
-
-        .favorites__shell {
-            position: relative;
-            width: 280px;
-            height: 280px;
-            background: var(--wite-bcg-cl);
-            border: 11px solid #ffe550;
-            border-radius: 50%;
-    
-        }
-    
-        .gamburger__photo {
-            z-index: 10;
-            position: absolute;
-            top: 18px;
-            left: 17px;
-        }
-//  .favorites__link {
-//      display: block;
-//      transition: box-shadow var(--time-transition) var(--cubic);
-
-//      &:hover,
-//      &:focus {
-//          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-//              1px 4px 6px rgba(0, 0, 0, 0.16);
-//          outline: none;
-//      }
- 
-
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
     }
 }
- }
+
+.favorites__item {
+    width: 280px;
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 2);
+    width: 336px;
+    }
+
+
+@media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 64px) / 3);
+    width: 395px;
+    }
+}
+
+.favorites__item:nth-child(n + 4) {
+    display: none;
+
+@media screen and (min-width: 768px) {
+    display: block;
+    }
+}
+
+.favorites__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    padding: 28px;
+
+    border: 11px solid var(--fill-bcg-cl);
+    border-radius: 50%;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        padding: 34px;
+
+        border-radius: 50%;
+        border-width: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 40px;
+
+        border-width: 16px;
+        border-radius: 50%;
+    }
+}
+
+.favorites__link:hover,
+.favorites__link:focus,
+.favorites__link:active {
+    border-color: var(--menu-avtiv-border-cl);
+}
