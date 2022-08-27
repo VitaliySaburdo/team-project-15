@@ -36,13 +36,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: var(--link-text-cl);
+  fill: var(--link-text-cl);
   // animation: var();
   // ?не тянется желтый цвет бургера
   &:hover,
   &:focus,
   &:active {
-    color: var(--menu-border-cl);
+    fill: var(--menu-border-cl);
   }
 
   @media screen and (min-width: 768px) {
