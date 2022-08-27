@@ -1,6 +1,6 @@
 .subscribe {
     display: flex;
-    background-color: #fefefe;
+    background-color: inherit;
     position: relative;
 
 }
@@ -80,8 +80,18 @@
     margin-bottom: 20px;
     padding: 11px;
 
+
+    &:focus {
+        outline: none;
+        border: 0.85px solid var(--line-border-cl);
+
+
+    }
+
+
     &:not(:placeholder-shown):required:valid {
         border-color: var(--line-border-cl);
+
     }
 
     &:not(:placeholder-shown):required:invalid {
@@ -107,7 +117,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 36px;
+        margin-bottom: 100px;
     }
 }
 
