@@ -1,26 +1,28 @@
-<section class="favorites-section">
+<section class="section favorites">
 
-    <div class="favorites-container">
+    <div class="container">
+
+      <!-- <div class="favorites_performance"> -->
 
       <h2 class="favorites__title">Some of Our Favorites</h2>
 
-      <p class="favorites__description">
+      <p class="favorites__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
 
-    <ul class="favorites list">
+    <ul class="favorites_list list">
+
+      <!-- burger -->
+
       <li class="favorites__item">
-
         <a class="favorites__link link" href="">
-
-          <div class="favorites__shell">
             <picture>
                 <source
                   srcset="
                     ../src/images/favorites/lg/gamburger-@1x_lg.png 1x,
                     ../src/images/favorites/lg/gamburger-@2x_lg.png 2x
                   "
-                  media="(min-width:1200px)"
+                  media="(min-width:1280px)"
                 />
                 <source
                   srcset="
@@ -34,29 +36,26 @@
                     ../src/images/favorites/sm/gamburger-@1x_sm.png 1x,
                     ../src/images/favorites/sm/gamburger-@2x_sm.png 2x
                   "
-                  media="(min-width:320px)"
+                  media="(max-width: 767px)"
                 />
                 <img
-                  class="gamburger__photo"
-                  src="../src/images/favorites/lg/gamburger-@1x_lg.png"
+                  class="product__photo"
+                  src="../src/images/favorites/sm/gamburger-@1x_sm.png"
                   alt="gamburger"
-                  height="223"
-                width="223"
                 />
             </picture>
-          </div>
         </a>
       </li>
+
+      <!-- pasta -->
+
       <li class="favorites__item">
-      
         <a class="favorites__link link" href="">
-      
-          <div class="favorites__shell">
             <picture>
               <source srcset="
                           ../src/images/favorites/lg/pasta-@1x_lg.png 1x,
                           ../src/images/favorites/lg/pasta-@2x_lg.png 2x
-                        " media="(min-width:1200px)" />
+                        " media="(min-width:1280px)" />
               <source srcset="
                           ../src/images/favorites/md/pasta-@1x_md.png 1x,
                           ../src/images/favorites/md/pasta-@2x_md.png 2x
@@ -64,35 +63,86 @@
               <source srcset="
                           ../src/images/favorites/sm/pasta-@1x_sm.png 1x,
                           ../src/images/favorites/sm/pasta-@2x_sm.png 2x
-                        " media="(min-width:320px)" />
-              <img class="gamburger__photo" src="../src/images/favorites/lg/pasta-@1x_lg.png" alt="pasta" height="223"
-                width="223" />
+                        " media="(max-width: 767px)" />
+              <img class="product__photo"
+                    src="../src/images/favorites/sm/pasta-@1x_sm.png" alt="pasta"  />
             </picture>
-          </div>
         </a>
       </li>
+
+      <!-- pizza -->
+
       <li class="favorites__item">
-      
         <a class="favorites__link link" href="">
-      
-          <div class="favorites__shell">
             <picture>
               <source srcset="
-                                ../src/images/favorites/lg/pizza-@1x_lg.png 1x,
-                                ../src/images/favorites/lg/pizza-@2x_lg.png 2x
-                              " media="(min-width:1200px)" />
+                ../src/images/favorites/lg/pizza-@1x_lg.png 1x,
+                ../src/images/favorites/lg/pizza-@2x_lg.png 2x
+                  " media="(min-width:1280px)" />
               <source srcset="
-                                ../src/images/favorites/md/pizza-@1x_md.png 1x,
-                                ../src/images/favorites/md/pizza-@2x_md.png 2x
-                              " media="(min-width:768px)" />
+                ../src/images/favorites/md/pizza-@1x_md.png 1x,
+                ../src/images/favorites/md/pizza-@2x_md.png 2x
+                  " media="(min-width:768px)" />
               <source srcset="
-                                ../src/images/favorites/sm/pizza-@1x_sm.png 1x,
-                                ../src/images/favorites/sm/pizza-@2x_sm.png 2x
-                              " media="(min-width:320px)" />
-              <img class="gamburger__photo" src="../src/images/favorites/lg/pizza-@1x_lg.png" alt="pasta" height="223"
-                width="223" />
+                ../src/images/favorites/sm/pizza-@1x_sm.png 1x,
+                ../src/images/favorites/sm/pizza-@2x_sm.png 2x
+                  " media="(max-width: 767px)" />
+              <img class="product__photo" src="../src/images/favorites/sm/pizza-@1x_sm.png" alt="pasta" />
             </picture>
-          </div>
+        </a>
+      </li>
+
+      <!-- chicken -->
+
+      <li class="favorites__item">
+        <a class="favorites__link link" href="">
+            <picture>
+              <source srcset="
+                      ../src/images/favorites/lg/chicken-@1x_lg.png 1x,
+                      ../src/images/favorites/lg/chicken-@2x_lg.png 2x
+                        " media="(min-width:1280px)" />
+              <source srcset="
+                      ../src/images/favorites/md/chicken-@1x_md.png 1x,
+                      ../src/images/favorites/md/chicken-@2x_md.png 2x
+                        " media="(max-width: 1279px)" />
+              <img class="product__photo" src="../src/images/favorites/md/chicken-@1x_md.png" alt="chicken"  />
+            </picture>
+        </a>
+      </li>
+
+      <!-- salat -->
+
+      <li class="favorites__item">
+        <a class="favorites__link link" href="">
+            <picture>
+              <source srcset="
+                            ../src/images/favorites/lg/salat-@1x_lg.png 1x,
+                            ../src/images/favorites/lg/salat-@2x_lg.png 2x
+                              " media="(min-width:1280px)" />
+              <source srcset="
+                            ../src/images/favorites/md/salat-@1x_md.png 1x,
+                            ../src/images/favorites/md/salat-@2x_md.png 2x
+                              " media="(max-width: 1279px)" />
+              <img class="product__photo" src="../src/images/favorites/md/salat-@2x_md.png" alt="salat" />
+            </picture>
+        </a>
+      </li>
+
+      <!-- borshch -->
+
+      <li class="favorites__item">
+        <a class="favorites__link link" href="">
+            <picture>
+              <source srcset="
+                                  ../src/images/favorites/lg/borshch-@1x_lg.png 1x,
+                                  ../src/images/favorites/lg/borshch-@2x_lg.png 2x
+                                    " media="(min-width:1280px)" />
+              <source srcset="
+                                  ../src/images/favorites/md/borshch-@1x_md.png 1x,
+                                  ../src/images/favorites/md/borshch-@2x_md.png 2x
+                                    " media="(max-width: 1279px)" />
+              <img class="product__photo" src="../src/images/favorites/md/borshch-@1x_md.png" alt="borshch" />
+            </picture>
         </a>
       </li>
     </ul>
