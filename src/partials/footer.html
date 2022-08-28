@@ -1,30 +1,70 @@
-
 <footer class="footer">
   <div class="container footer__container">
-    <a class="logo footer__logo link" href="#"
-      ><svg class="footer__icon" width="66" height="52">
-        <use href="./images/sprite.svg#logo"></use>
-      </svg>
-    </a>
+    <!-- В Footer-і знаходяться два блока.
+В першому блоці знаходиться логотип, блок навігації, а також блок для підписки.
+Логотип та навігацію потрібно реалізувати так само, як і такі ж самі елементи в хедері.
+Блок підписки потрібно реалізувати як і блок підписки в секції Subscribe.
+Також в блоці підписки потрібно додати опис з посиланням на Privacy Policy (політику конфіденційності).
+В другому блоці футера повинен бути список з посиланнями на додаткову інформацію, а також строка з копірайтом.
+ -->
+    <div class="footer__logo-navigation-subscribe">
+      <!-- logotip -->
+      <div class="footer__logo-navigation">
+        <a class="logo footer__logo link" href="#"><svg class="footer__icon" width="69" height="51">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
 
-    <nav class="footer_nav">
-      <ul class="footer__list list">
-        <li class="footer__item">
-          <a class="footer__link footer__link--current link" href="#">Home</a>
+        <!-- navigasion -->
+        <nav class="footer__nav">
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a class="footer__link footer__link--current link" href="./index.html">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="#">Service</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="#">Menu</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- subscribe -->
+
+      <form class="footer__form subscribe-form">
+        <label for="subscribe-e-mail" class="footer__label">Subscribe</label>
+        <input type="email" class="footer__input" name="e-mail" id="subscribe-e-mail"
+          placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+        <button type="submit" class="footer__btn">Subscribe</button>
+        <span class="footer__checkbox">By subscribing you agree to with our <a class="footer__checkbox footer__checkbox--conditions"
+            href="">
+            Privacy Policy</a>
+        </span>
+      </form>
+    </div>
+
+    <!-- список посилань and копирайт -->
+    <div class="footer__settings">
+      <ul class="footer__settings-list list">
+        <li class="footer__settings-item">
+          <a class="footer__settings-link link" href="#">Privacy Policy</a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link link" href="#">About</a>
+        <li class="footer__settings-item">
+          <a class="footer__settings-link link" href="#">Terms of Service</a>
         </li>
-        <li class="footer__item">
-          <a class="footer__link link" href="#">Service</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link link" href="#">Menu</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link link" href="#">Contact</a>
+        <li class="footer__settings-item">
+          <a class="footer__settings-link link" href="#">Cookies Settings</a>
         </li>
       </ul>
-    </nav>
+      <!-- coryright-->
+      <p class="footer__coryright">2022 FoodSta. All right reserved.</p>
+    </div>
 </footer>
-
