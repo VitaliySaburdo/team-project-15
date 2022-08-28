@@ -19,6 +19,9 @@
 
   cursor: pointer;
 
+  transition-property: background-color;
+  @extend %animation;
+
   &:hover {
     background-color: var(--accent-btn-cl);
   }
