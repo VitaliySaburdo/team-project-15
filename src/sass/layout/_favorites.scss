@@ -108,4 +108,29 @@
 .favorites__link:focus,
 .favorites__link:active {
     border-color: var(--menu-avtiv-border-cl);
+    animation: rotate-center 1s none infinite ease-out 0.5s;
+
+@-webkit-keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+        }
+    }
 }
