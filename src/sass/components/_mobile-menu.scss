@@ -17,8 +17,12 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  // !!!
-  transition: opacity var(--anim), visibility var(--anim);
+
+  transition-property: opacity;
+  @extend %animation;
+
+  transition-property: visibility;
+  @extend %animation;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -32,12 +36,10 @@
 }
 
 .menu {
-  // display: flex;
-  // flex-direction: column;
-  // position: absolute;
-
   transform: translateX(100%);
-  transition: transform var(--anim);
+
+  transition-property: transform;
+  @extend %animation;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -49,42 +51,34 @@
 }
 
 .menu__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  right: 4px;
+  top: 4px;
+  padding: 0;
+  margin-left: auto;
 
-    position: fixed;
-    right: 4px;
-    top: 4px;
-    padding: 0;
-    margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // add
+  fill: var(--primary-text-cl);
 
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    // add
-    fill: var(--primary-text-cl);
-
-    
-
-    .menu-overlay & {
-        position: absolute;
-    }
-}
-
-// .menu__icon{
-//     box-shadow: inset 2px 1px 4px rgba(61, 61, 61, 0.1);
-// }
-
-.menu__list{
-   overflow: hidden;
+  .menu-overlay & {
+    position: absolute;
+  }
 }
 
 .menu__item {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+
+  transition-property: background-color;
+  @extend %animation;
 
   &:hover,
   &:focus,
@@ -100,6 +94,5 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  // letter-spacing: 0.02em;
   color: #000000;
 }

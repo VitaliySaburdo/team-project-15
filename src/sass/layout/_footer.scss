@@ -2,67 +2,69 @@
   background-color: var(--heder-bcg-cl);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
 
-    @media screen and (max-width: 767px) {
-      background-image: url("../images/footer/orangesm.png"), url("../images/footer/sprayorangesm.png"),
-       url("../images/footer/top1sm.png"), url("../images/footer/top2sm.png"),
-      url("../images/footer/top3sm.png"), url("../images/footer/top4sm.png"),
-      
-      url("../images/footer/left1sm.png"), url("../images/footer/left2sm.png");
+  @media screen and (max-width: 767px) {
+    background-image:
+    // right
+     url('../images/footer/orangesm.png'),
+      url('../images/footer/sprayorangesm.png'),
+// bottom
+      url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
+      url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
+// left
+      url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
 
-      background-repeat: no-repeat;
-      background-position:
-      top 25px right 0, top 0 right 0,
-      left 43px bottom 0, left 71px bottom 0, left 126px bottom 0, left 216px bottom 0,
-      top 111px left 0 , top 137px left 0,
+    background-repeat: no-repeat;
+    background-position:
+    // // right
+     top 25px right 0, top 0 right 0,
+    // bottom
+     left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
+// left    
       top 111px left 0, top 137px left 0;
-      }
-    
-      @media screen and (min-width: 768px) {
-      background-image:
-      url("../images/footer/orangemd@1x.png"), url("../images/footer/sprayorangemd@1x.png"),
+  }
 
-       url("../images/footer/bottom1md.png"), 
-       url("../images/footer/top1md@1x.png"), 
-       url("../images/footer/top2md@1x.png"),
-        url("../images/footer/top3md@1x.png"),
-        url("../images/footer/top4md@1x.png"),
-       url("../images/footer/bottom2md.png");
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/footer/orangemd@1x.png'),
+      url('../images/footer/sprayorangemd@1x.png'),
+      url('../images/footer/bottom1md.png'),
+      url('../images/footer/top1md@1x.png'),
+      url('../images/footer/top2md@1x.png'),
+      url('../images/footer/top3md@1x.png'),
+      url('../images/footer/top4md@1x.png'),
+      url('../images/footer/bottom2md.png');
 
-        background-repeat: no-repeat;
-        background-position:
-        // right
-          top 35px right 0, top 0 right 0,
-          // bottom
-          left 17px bottom 0, left 136px bottom 0,
-
-           left 197px bottom 0, left 314px bottom 0,
-            left 503px bottom 0, right 0 bottom 0;
-      }
-                                         
-      @media screen and (min-width: 1280px) {
-          background-image:
-            url("../images/footer/lg/1lg@1x.png"),
-            url("../images/footer/lg/2lg@1x.png"),
-            url("../images/footer/lg/3lg@1x.png"),
-                          // lg orange
-            url("../images/footer/lg2.png"),
-              url("../images/footer/lgorange1.png"),
-
-               url("../images/footer/lg/6lg@1x.png"),
-                url("../images/footer/lg/7lg@1x.png"),
-            url("../images/footer/lg/8lg@1x.png");
-
-          background-repeat: no-repeat;
-          background-position:
-            // bottom
-            left 53px bottom 0, left 216px bottom 0, left 280px bottom 0,
-
-           // lg orange
-           left 340px bottom 0, left 450px bottom 0,
+    background-repeat: no-repeat;
+    background-position:
+      // right
+      top 35px right 0, top 0 right 0,
+      // bottom
+      left -17px bottom 0,
+      left 136px bottom 0, left 197px bottom 0,
       
-           right 282px bottom 0, right 134px bottom 0,
-           right 16px bottom 0;
-        }
+      right 233px bottom 0,
+      right 94px bottom 0, right 0 bottom 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/footer/lg/1lg@1x.png'),
+      url('../images/footer/lg/2lg@1x.png'),
+      url('../images/footer/lg/3lg@1x.png'),
+      // lg orange
+      url('../images/footer/lg2.png'),
+      url('../images/footer/lgorange1.png'),
+      url('../images/footer/lg/6lg@1x.png'),
+      url('../images/footer/lg/7lg@1x.png'),
+      url('../images/footer/lg/8lg@1x.png');
+
+    background-repeat: no-repeat;
+    background-position:
+      // bottom
+      left 53px bottom 0, left 216px bottom 0, left 280px bottom 0,
+      // lg orange
+      center bottom 0,
+      center bottom 0, right 282px bottom 0, right 134px bottom 0,
+      right 16px bottom 0;
+  }
 }
 
 .footer__container {
@@ -153,11 +155,14 @@
 
   color: #000000;
 
+  transition-property: color, text-decoration;
+    @extend %animation;
+
   &:hover,
   &:focus {
     color: var(--accent-text-cl);
     text-decoration: underline;
-}
+  }
 }
 
 //   < !-- subscribe -->
@@ -192,7 +197,7 @@
 .footer__input {
   display: block;
   width: 100%;
-  width: 279px;
+  max-width: 279px;
   height: 42px;
 
   padding: 12px;
@@ -202,10 +207,13 @@
   border-radius: 30px;
   outline: transparent;
 
-    &:focus,
-    &:active {
-        border: 0.854167px solid var(--link-text-cl);
-      }
+  transition-property: border;
+  @extend %animation;
+
+  &:focus,
+  &:active {
+    border: 0.854167px solid var(--link-text-cl);
+  }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
@@ -225,11 +233,13 @@
   border: 0.854167px solid var(--line-border-cl);
   border-radius: 30px;
 
-  // // transition: background-color var(--anim);
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
     margin-right: 0;
   }
+
+  transition-property: background-color;
+  @extend %animation;
 
   &:hover,
   &:focus {

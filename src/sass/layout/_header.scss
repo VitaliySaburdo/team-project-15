@@ -37,8 +37,10 @@
   border: none;
   cursor: pointer;
   fill: var(--link-text-cl);
-  // animation: var();
-  // ?не тянется желтый цвет бургера
+
+  transition-property: fill;
+  @extend %animation;
+
   &:hover,
   &:focus,
   &:active {
@@ -73,14 +75,14 @@
   font-size: 14px;
   line-height: calc(16 / 14);
 
-  // letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   padding-top: 28px;
   padding-bottom: 28px;
-  // **how
-  transition: color var(--anim);
   color: var(--primary-text-cl);
+
+  transition-property: color, text-decoration;
+  @extend %animation; 
 
   &:hover,
   &:focus {
@@ -95,6 +97,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
