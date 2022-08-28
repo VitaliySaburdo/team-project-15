@@ -129,12 +129,12 @@
   color: inherit;
   background-color: var(--wite-bcg-cl);
   cursor: pointer;
-  border: 2px solid #7eb101;
+  border: 2px solid var(--accent-secondary-btn--cl);
 
   transition-property: border-color;
   @extend %animation;
 
   &:hover {
-    border-color: var(--accent-secondary-btn--cl);
+    border-color: var(--btn-secondary-cl);
   }
 }
