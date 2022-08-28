@@ -1,201 +1,183 @@
 .subscribe {
-    display: flex;
-    background-color: inherit;
-    position: relative;
-
+  display: flex;
+  background-color: inherit;
+  position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: -74px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -66px;
+  }
 }
 
 .subscribe-title {
-    display: block;
-    font-family: var(--primary-font);
-    text-transform: capitalize;
-    color: var(--primary-text-cl);
-    margin-top: 95px;
-    font-weight: 700;
-    font-size: 28px;
+  display: block;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  color: var(--primary-text-cl);
+  margin-top: 95px;
+  font-weight: 700;
+  font-size: 28px;
+  width: 100%;
+  line-height: calc(37px / 28px);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    height: auto;
     width: 100%;
-    line-height: calc(37px/28px);
-    margin-bottom: 20px;
+  }
 
-    @media screen and (min-width: 480px) {
-        height: auto;
-        width: 100%;
-    }
+  @media screen and (min-width: 768px) {
+    line-height: calc(50px / 42px);
+    font-size: 42px;
+    width: 656px;
+    margin-top: 156px;
+  }
 
-    @media screen and (min-width: 768px) {
-        line-height: calc(50px/42px);
-        font-size: 42px;
-        width: 656px;
-        margin-top: 156px;
-
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-top: 46px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-top: 46px;
+  }
 }
 
 .subscribe-text {
-    font-family: var(--primary-font);
-    margin-bottom: 40px;
-    font-weight: 400;
+  font-family: var(--primary-font);
+  margin-bottom: 40px;
+  font-weight: 400;
+  width: 100%;
+  font-size: 14px;
+  line-height: calc(16px / 14px);
+  color: var(--primary-text-cl);
+
+  @media screen and (min-width: 480px) {
+    height: auto;
     width: 100%;
-    font-size: 14px;
-    line-height: calc(16px/14px);
-    color: var(--primary-text-cl);
+  }
 
-    @media screen and (min-width: 480px) {
-        height: auto;
-        width: 100%;
-    }
-
-
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: calc(24px/16px);
-        width: 656px;
-        margin-bottom: 24px;
-
-
-
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(24px / 16px);
+    width: 656px;
+    margin-bottom: 24px;
+  }
 }
 
-
 .subscribe-input__email {
-    font-family: var(--primary-font);
+  font-family: var(--primary-font);
+  width: 100%;
+  height: 42px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  align-items: center;
+  color: var(--primary-text-cl);
+  border: 0.85px solid var(--menu-border-cl);
+  border-radius: 30px;
+  background-color: inherit;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 11px;
+
+  &:focus {
+    outline: none;
+    border: 0.85px solid var(--line-border-cl);
+  }
+
+  &:not(:placeholder-shown):required:valid {
+    border-color: var(--line-border-cl);
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: var(--fail-border-cl);
+  }
+
+  &::placeholder {
+    color: #505050;
+  }
+
+  @media screen and (min-width: 479px) {
+    height: auto;
     width: 100%;
-    height: 42px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-    align-items: center;
-    color: var(--primary-text-cl);
-    border: 0.85px solid var(--menu-border-cl);
-    border-radius: 30px;
-    background-color: inherit;
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 11px;
+  }
 
+  @media screen and (min-width: 768px) {
+    width: 395px;
+    margin-bottom: 0;
+  }
 
-    &:focus {
-        outline: none;
-        border: 0.85px solid var(--line-border-cl);
-
-
-    }
-
-
-    &:not(:placeholder-shown):required:valid {
-        border-color: var(--line-border-cl);
-
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        border-color: var(--fail-border-cl);
-    }
-
-
-
-
-    &::placeholder {
-        color: #505050;
-    }
-
-    @media screen and (min-width: 479px) {
-        height: auto;
-        width: 100%;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 395px;
-        margin-bottom: 0;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 100px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 100px;
+  }
 }
 
 .subscribe-input__button {
-    color: var(--primary-text-cl);
-    border-radius: 30px;
-    background-color: var(--menu-avtiv-border-cl);
-    border: none;
-    font-family: var(--primary-font);
-    float: right;
-    // justify-content: center;
-    align-items: center;
-    width: 103px;
-    height: 42px;
-    // margin-left: 177px;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    cursor: pointer;
+  color: var(--primary-text-cl);
+  border-radius: 30px;
+  background-color: var(--menu-avtiv-border-cl);
+  border: none;
+  font-family: var(--primary-font);
+  float: right;
+  // justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 42px;
+  // margin-left: 177px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-btn-cl);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-cl);
+  }
 
+  @media screen and (min-width: 479px) {
+  }
 
-    @media screen and (min-width: 479px) {}
+  @media screen and (min-width: 767px) {
+    float: none;
+    margin-left: 32px;
+  }
 
-
-    @media screen and (min-width: 767px) {
-        float: none;
-        margin-left: 32px;
-
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-top: 0;
-
-    }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+  }
 }
 
 .banan {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  bottom: 17px;
+  width: 161px;
+  height: auto;
+  // outline: 1px solid green;
+  z-index: 0;
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
     position: absolute;
-    left: 60px;
+    left: 140px;
     top: 0;
     bottom: 17px;
     width: 161px;
     height: auto;
-    // outline: 1px solid green;
-    z-index: 0;
+  }
 
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 423px;
+    height: 136px;
+    top: 0;
+    width: 281px;
+  }
 
-    @media screen and (min-width: 480px) {
-        width: 280px;
-        position: absolute;
-        left: 140px;
-        top: 0;
-        bottom: 17px;
-        width: 161px;
-        height: auto;
-
-    }
-
-    @media screen and (min-width: 768px) {
-        position: absolute;
-        left: 423px;
-        height: 136px;
-        top: 0;
-        width: 281px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        position: absolute;
-        left: 702px;
-        margin-top: 0;
-        width: 546px;
-        height: 266px;
-    }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 702px;
+    margin-top: 0;
+    width: 546px;
+    height: 266px;
+  }
 }
