@@ -7,11 +7,12 @@
 .offerings {
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     background-image: url(../images/offerings/bcg-img@1x-sm.png);
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url(../images/offerings/bcg-img@1x-md.png);
+    padding-bottom: 100px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -19,16 +20,19 @@
   }
 }
 .offerings_img--container {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    width: 280px;
+    height: 309px;
+    margin-top: 0;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     width: 357px;
     height: 394px;
-    margin-top: 115px;
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-top: 0;
-    }
+    margin-top: 0;
   }
-
   @media screen and (min-width: 1280px) {
     display: flex;
     width: 550px;
@@ -38,15 +42,6 @@
     margin-bottom: 75px;
   }
 }
-
-// .offerings__box {
-//   width: 573px;
-//   height: 393px;
-//   margin-top: 280px;
-//   @media screen and (min-width: 768px) and (max-width: 1279px) {
-//     margin-top: 60px;
-//   }
-// }
 
 .offerings_img--decor {
   display: flex;
@@ -189,8 +184,5 @@
 
   &:hover {
     border-color: var(--btn-secondary-cl);
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-bottom: 100px;
   }
 }
