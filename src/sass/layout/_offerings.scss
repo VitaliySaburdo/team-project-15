@@ -116,6 +116,9 @@
   background-color: var(--btn-cl);
   border-radius: 30px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -127,6 +130,9 @@
   background-color: var(--wite-bcg-cl);
   cursor: pointer;
   border: 2px solid #7eb101;
+
+  transition-property: border-color;
+  @extend %animation;
 
   &:hover {
     border-color: var(--accent-secondary-btn--cl);
