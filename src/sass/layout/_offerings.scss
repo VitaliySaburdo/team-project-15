@@ -3,47 +3,84 @@
   | Offerings section
   |============================
 */
+
 .offerings {
-  display: flex;
-  background-image: url(../images/offerings/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (max-width: 480px) {
+    background-image: url(../images/offerings/bcg-img@1x-sm.png);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(../images/offerings/bcg-img@1x-md.png);
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    background-image: url(../images/offerings/bcg-img@1x-lg.png);
+  }
 }
 .offerings_img--container {
-  display: flex;
-  width: 550px;
-  height: 604px;
-  margin-right: 90px;
-  margin-top: 177px;
-  margin-left: 16px;
-  margin-bottom: 75px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    width: 357px;
+    height: 394px;
+    margin-top: 115px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    width: 550px;
+    height: 604px;
+    margin-right: 90px;
+    margin-top: 177px;
+    margin-bottom: 75px;
+  }
 }
-.offerings__box {
-  width: 573px;
-  height: 393px;
-  margin-top: 280px;
-}
+
+// .offerings__box {
+//   width: 573px;
+//   height: 393px;
+//   margin-top: 280px;
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     margin-top: 60px;
+//   }
+// }
 
 .offerings_img--decor {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 550px;
   margin-top: auto;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 357px;
+    height: 357px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 550px;
+  }
 }
 .offerings__crc {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  width: 502px;
-  height: 502px;
   border-radius: 50%;
   background-color: var(--wite-bcg-cl);
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 326px;
+    height: 326px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 502px;
+    height: 502px;
+  }
 }
 .offerings__gradient {
   position: relative;
@@ -69,13 +106,22 @@
   line-height: 120%;
   color: var(--primary-text-cl);
   margin-bottom: 20px;
+  margin-top: 280px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 60px;
+    width: 526px;
+  }
 }
 
 .offerings-txt {
   line-height: 150%;
   color: var(--primary-text-cl);
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 526px;
+  }
 }
+
 .offerings__card-set {
   display: flex;
 }
@@ -85,6 +131,10 @@
   margin-right: 67px;
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 116px;
   }
 }
 .offerings__shell {
@@ -109,6 +159,9 @@
   line-height: 150%;
   color: var(--primary-text-cl);
   margin-bottom: 32px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 40px;
+  }
 }
 .offerings__btn {
   width: 106px;
@@ -136,5 +189,8 @@
 
   &:hover {
     border-color: var(--btn-secondary-cl);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 100px;
   }
 }

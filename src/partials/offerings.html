@@ -3,13 +3,44 @@
   <div class="offerings_img--container">
     <div class="offerings_img--decor">
       <div class="offerings__crc">
-        <img
-          class="offerings_img"
-          src="./images/offerings/apple@1x-lg.png"
-          alt="apple"
-          width=""
-          height=""
-        />
+        <picture class="offerings_img">
+          <!-- desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/offerings/apple@1x-lg.png 1x,
+              ./images/offerings/apple@2x-lg.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <!-- tablet screen -->
+          <source
+            media="(min-width: 767px)"
+            srcset="
+              ./images/offerings/apple@1x-md.png 1x,
+              ./images/offerings/apple@2x-md.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <!-- mobile screen -->
+          <source
+            media="(min-width: 480px)"
+            srcset="
+              ./images/offerings/apple@1x-sm.png 1x,
+              ./images/offerings/apple@2x-sm.png 2x
+            "
+            type="image/jpg"
+          />
+
+          <img
+            src="./images/hero/img1@1x-lg.png"
+            alt="Meetball and toast"
+            width="396"
+            height="502"
+          />
+        </picture>
         <div class="offerings__gradient"></div>
       </div>
     </div>
