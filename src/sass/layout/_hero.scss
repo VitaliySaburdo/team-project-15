@@ -6,6 +6,11 @@
 .hero {
   display: flex;
   position: relative;
+  padding-top: 72px;
+  @media screen and (max-width: 767px) {
+    padding-top: 136px;
+    padding-bottom: 50px;
+  }
 }
 
 .hero__group {
@@ -55,12 +60,17 @@
     margin-bottom: 40px;
   }
 }
+.offerings_img {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 .hero__slider {
   @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 767px) and (max-width: 1279px) {
-    margin-top: 149px;
+    margin-top: 225px;
     width: 336px;
     height: 320px;
     position: absolute;
