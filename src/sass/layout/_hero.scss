@@ -6,6 +6,7 @@
 .hero {
   display: flex;
   position: relative;
+  padding-top: 72px;
   @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 50px;

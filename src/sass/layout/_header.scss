@@ -1,7 +1,10 @@
 .header {
   background-color: var(--heder-bcg-cl);
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99999;
 }
 
 .header__container {
@@ -82,7 +85,7 @@
   color: var(--primary-text-cl);
 
   transition-property: color, text-decoration;
-  @extend %animation; 
+  @extend %animation;
 
   &:hover,
   &:focus {
