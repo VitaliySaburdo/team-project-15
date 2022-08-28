@@ -1,1 +1,86 @@
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.offerings {
+  background-image: url(../images/offerings/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1280px;
+  height: 824px;
+}
+
+.offerings-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+.offerings-title-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+.offerings-title2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #2c2c2c;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.offerings-title2-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+.offerings-btn {
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+  background: white;
+  padding: 10px 22px;
+  margin-top: 32px;
+}
+.offerings-icon {
+  border-radius: 50%;
+  background: #fefefe;
+  padding: 10.5px;
+}
+.apple-circle {
+  border-radius: 50%;
+  background: #fefefe;
+  width: 502px;
+  height: 502px;
+}
+.apple-border {
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 550px;
+  height: 550px;
+  margin-left: 16px;
+  margin-right: 90px;
+}
+.offerings-list {
+  display: flex;
+  gap: 67px;
+}
+.offerings-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
