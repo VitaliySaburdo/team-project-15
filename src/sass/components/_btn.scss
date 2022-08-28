@@ -4,6 +4,9 @@
   min-width: 100px;
   max-width: 106px;
   height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--btn-cl);
   border-radius: 30px;
