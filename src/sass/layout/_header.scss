@@ -85,12 +85,8 @@
   &:hover,
   &:focus {
     color: var(--accent-text-cl);
+    text-decoration: underline;
   }
-}
-
-.header__link--current {
-  color: var(--accent-text-cl);
-  text-decoration: underline;
 }
 
 .header__btn {
