@@ -2,9 +2,11 @@
   display: flex;
   background-color: inherit;
   position: relative;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: -74px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-top: -66px;
   }
@@ -117,11 +119,10 @@
   border: none;
   font-family: var(--primary-font);
   float: right;
-  // justify-content: center;
+  margin-bottom: 60px;
   align-items: center;
   width: 103px;
   height: 42px;
-  // margin-left: 177px;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
@@ -132,16 +133,17 @@
     background-color: var(--accent-btn-cl);
   }
 
-  @media screen and (min-width: 479px) {
-  }
+  @media screen and (min-width: 479px) {}
 
   @media screen and (min-width: 767px) {
     float: none;
     margin-left: 32px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     margin-top: 0;
+    margin-bottom: 100px;
   }
 }
 
@@ -152,7 +154,6 @@
   bottom: 17px;
   width: 161px;
   height: auto;
-  // outline: 1px solid green;
   z-index: 0;
 
   @media screen and (min-width: 480px) {
@@ -177,7 +178,7 @@
     position: absolute;
     left: 702px;
     margin-top: 0;
-    width: 546px;
+    width: 608px;
     height: 266px;
   }
 }
