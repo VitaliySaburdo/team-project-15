@@ -11,7 +11,7 @@
   background-color: var(--heder-bcg-cl);
 
   //   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px 1px rgba(0, 0, 0, 0.14), 0px 2px 0px 3px rgba(0, 0, 0, 0.12);
   border-radius: 30px 0px 30px 30px;
   overflow: hidden;
 
@@ -37,7 +37,7 @@
 }
 
 .menu {
-  transform: translateX(100%);
+  transform: translateY(-100%);
 
   transition-property: transform;
   @extend %animation;
@@ -47,7 +47,7 @@
   }
 
   .menu-overlay.is-open & {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

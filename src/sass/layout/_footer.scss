@@ -8,8 +8,7 @@
      url('../images/footer/orangesm.png'),
       url('../images/footer/sprayorangesm.png'),
 // bottom
-      url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
-      url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
+      url('../images/footer/sm.png'),
 // left
       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
 
@@ -18,10 +17,30 @@
     // // right
      top 25px right 0, top 0 right 0,
     // bottom
-     left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
+     bottom 0 center,
 // left    
       top 111px left 0, top 137px left 0;
   }
+
+//     background-image:
+//     // right
+//      url('../images/footer/orangesm.png'),
+//       url('../images/footer/sprayorangesm.png'),
+// // bottom
+//       url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
+//       url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
+// // left
+//       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
+
+//     background-repeat: no-repeat;
+//     background-position:
+//     // // right
+//      top 25px right 0, top 0 right 0,
+//     // bottom
+//      left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
+// // left    
+//       top 111px left 0, top 137px left 0;
+//   }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/footer/orangemd@1x.png'),
@@ -197,8 +216,14 @@
 .footer__input {
   display: block;
   width: 100%;
-  max-width: 279px;
+  width: 279px;
   height: 42px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  
+  color: #505050;
 
   padding: 12px;
   padding-right: 0;
@@ -215,7 +240,17 @@
     border: 0.854167px solid var(--link-text-cl);
   }
 
+  &:not(:placeholder-shown):required:valid {
+    border-color: var(--line-border-cl);
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border-color: var(--fail-border-cl);
+  }
+
   @media screen and (max-width: 767px) {
+    height: auto;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -226,6 +261,12 @@
   text-align: center;
   justify-content: center;
 
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 13px;
+  
+  color: var(--primary-text-cl);
+
   padding: 11px 22px;
   width: 103px;
   height: 42px;
@@ -235,8 +276,8 @@
   cursor: pointer;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
     margin-right: 0;
+    float: right;
   }
 
   transition-property: background-color;
@@ -259,6 +300,10 @@
   &--conditions {
     text-decoration: underline;
     color: var(--link-text-cl);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 82px;
   }
 }
 
