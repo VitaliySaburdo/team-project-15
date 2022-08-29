@@ -84,6 +84,12 @@
 
 .hero__btn {
   @extend %btn;
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    margin-bottom: 73px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 164px;
+  }
 }
 
 .hero__slider--container {

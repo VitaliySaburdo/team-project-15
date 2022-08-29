@@ -17,6 +17,7 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     background-image: url(../images/offerings/bcg-img@1x-lg.png);
+    margin-top: -161px;
   }
 }
 .offerings_img--container {
@@ -31,7 +32,7 @@
     display: flex;
     width: 357px;
     height: 394px;
-    margin-top: 0;
+    margin-top: 150px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -92,7 +93,12 @@
 .offerings_img {
   position: absolute;
   z-index: 100;
-  top: -78;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    top: -53;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -78;
+  }
 }
 
 .offerings__title {
