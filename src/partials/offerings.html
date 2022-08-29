@@ -1,43 +1,91 @@
 <section class="offerings container" id="offerings">
   <!-- left side -->
-  <div class="offerings_img--container">
-    <div class="offerings_img--decor">
-      <div class="offerings__crc">
-        <picture class="offerings_img">
-          <!-- desktop screen -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/offerings/apple@1x-lg.png 1x,
-              ./images/offerings/apple@2x-lg.png 2x
-            "
-            type="image/jpg"
-          />
+  <div class="offering__container--left">
+    <div class="offerings_img--container">
+      <div class="offerings_img--decor">
+        <div class="offerings__crc">
+          <picture class="offerings_img">
+            <!-- desktop screen -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/offerings/apple@1x-lg.png 1x,
+                ./images/offerings/apple@2x-lg.png 2x
+              "
+              type="image/jpg"
+            />
 
-          <!-- tablet screen -->
-          <source
-            media="(min-width: 767px)"
-            srcset="
-              ./images/offerings/apple@1x-md.png 1x,
-              ./images/offerings/apple@2x-md.png 2x
-            "
-            type="image/jpg"
-          />
+            <!-- tablet screen -->
+            <source
+              media="(min-width: 767px)"
+              srcset="
+                ./images/offerings/apple@1x-md.png 1x,
+                ./images/offerings/apple@2x-md.png 2x
+              "
+              type="image/jpg"
+            />
 
-          <!-- mobile screen -->
-          <source
-            media="(min-width: 320px)"
-            srcset="
-              ./images/offerings/apple@1x-sm.png 1x,
-              ./images/offerings/apple@2x-sm.png 2x
-            "
-            type="image/jpg"
-          />
+            <!-- mobile screen -->
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./images/offerings/apple@1x-sm.png 1x,
+                ./images/offerings/apple@2x-sm.png 2x
+              "
+              type="image/jpg"
+            />
 
-          <img src="./images/offerings/apple@1x-lg.png" alt="apple" />
-        </picture>
-        <div class="offerings__gradient"></div>
+            <img
+              src="./images/offerings/apple@1x-lg.png"
+              alt="apple"
+              width=""
+              height=""
+            />
+          </picture>
+
+          <div class="offerings__gradient"></div>
+        </div>
       </div>
+    </div>
+    <!-- Tablet img -->
+    <div class="img__tablet--box">
+      <picture class="img__tablet--bg">
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 767px)"
+          srcset="
+            ./images/offerings/apple-1@1x-md.png 1x,
+            ./images/offerings/apple-1@2x-md.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          src="./images/offerings/apple-1@1x-md.png"
+          alt="apple"
+          width=""
+          height=""
+        />
+      </picture>
+
+      <picture class="img__tablet--sm">
+        <!-- tablet screen -->
+        <source
+          media="(min-width: 767px)"
+          srcset="
+            ./images/offerings/apple-2@1x-md.png 1x,
+            ./images/offerings/apple-2@2x-md.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <img
+          src="./images/offerings/apple-2@1x-md.png"
+          alt="apple"
+          width=""
+          height=""
+        />
+      </picture>
     </div>
   </div>
   <!-- Right side -->
