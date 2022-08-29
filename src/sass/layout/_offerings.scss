@@ -157,6 +157,10 @@
   line-height: 120%;
   color: var(--primary-text-cl);
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 28px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 60px;
@@ -168,6 +172,9 @@
 }
 
 .offerings-txt {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+  }
   line-height: 150%;
   color: var(--primary-text-cl);
   margin-bottom: 40px;
@@ -177,6 +184,9 @@
 }
 
 .offerings__card-set {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
   display: flex;
 }
 .offerings__item {
@@ -208,11 +218,13 @@
   color: var(--primary-text-cl);
   margin-bottom: 16px;
 }
+
 .offerings__item--txt {
   font-size: 14px;
   line-height: 150%;
   color: var(--primary-text-cl);
   margin-bottom: 32px;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 40px;
   }
