@@ -263,3 +263,34 @@
     border-color: var(--btn-secondary-cl);
   }
 }
+
+.offerings__btn--list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.offerings__btn--right {
+  display: flex;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.6667px;
+  line-height: 150%;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  align-items: center;
+
+  width: 83px;
+  height: 34px;
+  border: none;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.offerings__btn--icon {
+  fill: #000000;
+}
