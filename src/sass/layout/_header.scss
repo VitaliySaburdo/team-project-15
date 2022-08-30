@@ -37,6 +37,41 @@
   }
 }
 
+// анимация вариант 1 "ворота"
+
+// .header__icon{
+//     animation: rotateY 4000ms infinite alternate backwards ease-in-out 1000ms;
+//     }
+  
+//     @keyframes rotateY {
+//       0% {
+//         transform: perspective(400px) rotateY(40deg);
+//       }
+  
+//       100% {
+//         transform: perspective(400px) rotateY(-40deg);
+//       }
+// }
+
+// анимация лого вариант 2 солнышко
+
+.header__icon {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .header__burger {
   display: flex;
   align-items: center;
