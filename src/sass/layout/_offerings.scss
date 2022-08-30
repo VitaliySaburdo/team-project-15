@@ -292,5 +292,9 @@
   }
 }
 .offerings__btn--icon {
-  fill: #000000;
+  display: flex;
+  fill: currentColor;
+}
+.offerings__btn--decor {
+  margin-left: 3.5px;
 }
