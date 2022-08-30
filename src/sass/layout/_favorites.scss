@@ -108,5 +108,5 @@
 .favorites__link:active {
   border-color: var(--menu-avtiv-border-cl);
   transform: scale(1.15);
-  transition: 0.8s;
+  transition: 800ms ease-in-out;
 }
