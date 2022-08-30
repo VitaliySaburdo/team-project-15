@@ -1,11 +1,3 @@
-.customers {
-  &__title {
-    margin-bottom: 20px;
-    @media screen and (max-width: 767px) {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: calc(33 / 28);
-    }
 
     @media screen and (min-width: 768px) {
       font-weight: 700;
