@@ -6,13 +6,6 @@
   top: 0;
   width: 100vw;
   z-index: 999;
-
-  @media screen and (max-width: 767px) {
-    background-image: url('../images/footer/sm.png');
-
-    background-repeat: no-repeat;
-    background-position: bottom 0 center;
-  }
 }
 
 .header__container {
