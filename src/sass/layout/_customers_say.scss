@@ -146,6 +146,9 @@
   // }
 
   color: var(--primary-text-cl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding-top: 60px;
