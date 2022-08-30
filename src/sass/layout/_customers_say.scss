@@ -2,12 +2,12 @@
   color: var(--primary-text-cl);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding-top: 60px;
     padding-bottom: 55px;
     background-image: url(../images/customers/backround-customers-mobile.png);
-    background-position: bottom;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 768px;

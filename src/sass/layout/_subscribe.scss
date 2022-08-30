@@ -133,7 +133,8 @@
     background-color: var(--accent-btn-cl);
   }
 
-  @media screen and (min-width: 479px) {}
+  @media screen and (min-width: 479px) {
+  }
 
   @media screen and (min-width: 767px) {
     float: none;
@@ -156,7 +157,7 @@
   height: auto;
   z-index: 0;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 280px;
     position: absolute;
     left: 140px;
@@ -166,7 +167,7 @@
     height: auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     position: absolute;
     left: 423px;
     height: 136px;
@@ -175,8 +176,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
-    left: 702px;
+    position: relative;
+    left: -17px;
     margin-top: 0;
     width: 608px;
     height: 266px;
