@@ -4,43 +4,43 @@
 
   @media screen and (max-width: 767px) {
     background-image:
-    // right
-     url('../images/footer/orangesm.png'),
+      // right
+      url('../images/footer/orangesm.png'),
       url('../images/footer/sprayorangesm.png'),
-// bottom
+      // bottom
       url('../images/footer/sm.png'),
-// left
+      // left
       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
 
     background-repeat: no-repeat;
     background-position:
-    // // right
-     top 25px right 0, top 0 right 0,
-    // bottom
-     bottom 0 center,
-// left    
+      // // right
+      top 25px right 0, top 0 right 0,
+      // bottom
+      bottom 0 center,
+      // left    
       top 111px left 0, top 137px left 0;
   }
 
-//     background-image:
-//     // right
-//      url('../images/footer/orangesm.png'),
-//       url('../images/footer/sprayorangesm.png'),
-// // bottom
-//       url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
-//       url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
-// // left
-//       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
+  //     background-image:
+  //     // right
+  //      url('../images/footer/orangesm.png'),
+  //       url('../images/footer/sprayorangesm.png'),
+  // // bottom
+  //       url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
+  //       url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
+  // // left
+  //       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
 
-//     background-repeat: no-repeat;
-//     background-position:
-//     // // right
-//      top 25px right 0, top 0 right 0,
-//     // bottom
-//      left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
-// // left    
-//       top 111px left 0, top 137px left 0;
-//   }
+  //     background-repeat: no-repeat;
+  //     background-position:
+  //     // // right
+  //      top 25px right 0, top 0 right 0,
+  //     // bottom
+  //      left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
+  // // left    
+  //       top 111px left 0, top 137px left 0;
+  //   }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/footer/orangemd@1x.png'),
@@ -59,7 +59,7 @@
       // bottom
       left -17px bottom 0,
       left 136px bottom 0, left 197px bottom 0,
-      
+
       right 233px bottom 0,
       right 94px bottom 0, right 0 bottom 0;
   }
