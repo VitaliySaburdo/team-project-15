@@ -5,12 +5,12 @@
   @media screen and (max-width: 767px) {
     background-image:
       // right
-      url('../images/footer/sm/rightsm@1x.png'),
+      url(../images/footer/sm/rightsm@1x.png),
       
       // bottom
-      url('../images/footer/sm/sm@1x.png'),
+      url(../images/footer/sm/sm@1x.png),
       // left
-      url('../images/footer/sm/leftsm@1x.png');
+      url(../images/footer/sm/leftsm@1x.png);
 
     background-repeat: no-repeat;
     background-position:
@@ -38,14 +38,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/footer/md/right1md@1x.png'),
-      url('../images/footer/md/right2md@1x.png'),
-      url('../images/footer/md/bottom1md@1x.png'),
-      url('../images/footer/md/bottom2md@1x.png'),
-      url('../images/footer/md/bottom3md@1x.png'),
-      url('../images/footer/md/bottom4md@1x.png'),
-      url('../images/footer/md/bottom5md@1x.png'),
-      url('../images/footer/md/bottom6md@1x.png');
+    background-image: url(../images/footer/md/right1md@1x.png),
+      url(../images/footer/md/right2md@1x.png),
+      url(../images/footer/md/bottom1md@1x.png),
+      url(../images/footer/md/bottom2md@1x.png),
+      url(../images/footer/md/bottom3md@1x.png),
+      url(../images/footer/md/bottom4md@1x.png),
+      url(../images/footer/md/bottom5md@1x.png),
+      url(../images/footer/md/bottom6md@1x.png);
 
     background-repeat: no-repeat;
     background-position:
@@ -76,15 +76,15 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/footer/lg/1lg@1x.png'),
-      url('../images/footer/lg/2lg@1x.png'),
-      url('../images/footer/lg/3lg@1x.png'),
+    background-image: url(../images/footer/lg/1lg@1x.png),
+      url(../images/footer/lg/2lg@1x.png),
+      url(../images/footer/lg/3lg@1x.png),
       // lg orange
-      url('../images/footer/lg/4lg@1x.png'),
-      url('../images/footer/lg/5lg@1x.png'),
-      url('../images/footer/lg/6lg@1x.png'),
-      url('../images/footer/lg/7lg@1x.png'),
-      url('../images/footer/lg/8lg@1x.png');
+      url(../images/footer/lg/4lg@1x.png),
+      url(../images/footer/lg/5lg@1x.png),
+      url(../images/footer/lg/6lg@1x.png),
+      url(../images/footer/lg/7lg@1x.png),
+      url(../images/footer/lg/8lg@1x.png);
 
     background-repeat: no-repeat;
     background-position:
