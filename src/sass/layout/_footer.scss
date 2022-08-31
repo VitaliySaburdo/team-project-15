@@ -10,7 +10,8 @@
       // bottom
       url('../images/footer/sm/sm@1x.png'),
       // left
-      url('../images/footer/sm/left1sm@1x.png'), url('../images/footer/sm/left2sm@1x.png');
+      url('../images/footer/sm/left1sm@1x.png'),
+      url('../images/footer/sm/left2sm@1x.png');
 
     background-repeat: no-repeat;
     background-position:
@@ -18,23 +19,24 @@
       top 25px right 0, top 0 right 0,
       // bottom
       bottom 0 center,
-      // left    
-      top 111px left 0, top 137px left 0;
+      // left
+      top 111px left 0,
+      top 137px left 0;
 
-  //     @media (min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //         .footer {
-  //     // right
-  //       url('../images/footer/sm/right1sm@2x.png'),
-  //       url('../images/footer/sm/right2sm@2x.png'),
-  //       // bottom
-  //       url('../images/footer/sm/sm@2x.png'),
-  //       // left
-  //       url('../images/footer/sm/left1sm@2x.png'),
-  //       url('../images/footer/sm/left2sm@2x.png');
-  //         }
-  // }
+    //     @media (min-device-pixel-ratio: 2),
+    //       (min-resolution: 192dpi),
+    //       (min-resolution: 2dppx) {
+    //         .footer {
+    //     // right
+    //       url('../images/footer/sm/right1sm@2x.png'),
+    //       url('../images/footer/sm/right2sm@2x.png'),
+    //       // bottom
+    //       url('../images/footer/sm/sm@2x.png'),
+    //       // left
+    //       url('../images/footer/sm/left1sm@2x.png'),
+    //       url('../images/footer/sm/left2sm@2x.png');
+    //         }
+    // }
   }
 
   @media screen and (min-width: 768px) {
@@ -53,26 +55,24 @@
       top 35px right 0, top 0 right 0,
       // bottom
       left 0 bottom 0,
-      left 136px bottom 0, left 197px bottom 0,
-
-      right 233px bottom 0,
+      left 136px bottom 0, left 197px bottom 0, right 233px bottom 0,
       right 94px bottom 0, right 0 bottom 0;
 
-      // @media (min-device-pixel-ratio: 2),
-      //   (-webkit-min-device-pixel-ratio: 2),
-      //   (min-resolution: 192dpi),
-      //   (min-resolution: 2dppx) {
-      //     .footer {
-      //       url('../images/footer/md/right1md@2x.png'),
-      //         url('../images/footer/md/right2md@2x.png'),
-      //         url('../images/footer/md/bottom1md@2x.png'),
-      //         url('../images/footer/md/bottom2md@2x.png'),
-      //         url('../images/footer/md/bottom3md@2x.png'),
-      //         url('../images/footer/md/bottom4md@2x.png'),
-      //         url('../images/footer/md/bottom5md@2x.png'),
-      //         url('../images/footer/md/bottom6md@2x.png');
-      //     }
-      //   }
+    // @media (min-device-pixel-ratio: 2),
+    //   (-webkit-min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //     .footer {
+    //       url('../images/footer/md/right1md@2x.png'),
+    //         url('../images/footer/md/right2md@2x.png'),
+    //         url('../images/footer/md/bottom1md@2x.png'),
+    //         url('../images/footer/md/bottom2md@2x.png'),
+    //         url('../images/footer/md/bottom3md@2x.png'),
+    //         url('../images/footer/md/bottom4md@2x.png'),
+    //         url('../images/footer/md/bottom5md@2x.png'),
+    //         url('../images/footer/md/bottom6md@2x.png');
+    //     }
+    //   }
   }
 
   @media screen and (min-width: 1280px) {
@@ -95,21 +95,21 @@
       left 466px bottom 0, right 198px bottom 0, right 150px bottom 0,
       right 32px bottom 0;
 
-      // @media (min-device-pixel-ratio: 2),
-      //   (min-resolution: 192dpi),
-      //   (min-resolution: 2dppx) {
-      //     .footer {
-      //       background-image: url('../images/footer/lg/1lg@2x.png'),
-      //         url('../images/footer/lg/2lg@2x.png'),
-      //         url('../images/footer/lg/3lg@2x.png'),
-      //         // lg orange
-      //         url('../images/footer/lg/4lg@2x.png'),
-      //         url('../images/footer/lg/5lg@2x.png'),
-      //         url('../images/footer/lg/6lg@2x.png'),
-      //         url('../images/footer/lg/7lg@2x.png'),
-      //         url('../images/footer/lg/8lg@2x.png');
-      //     }
-      //   }
+    // @media (min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //     .footer {
+    //       background-image: url('../images/footer/lg/1lg@2x.png'),
+    //         url('../images/footer/lg/2lg@2x.png'),
+    //         url('../images/footer/lg/3lg@2x.png'),
+    //         // lg orange
+    //         url('../images/footer/lg/4lg@2x.png'),
+    //         url('../images/footer/lg/5lg@2x.png'),
+    //         url('../images/footer/lg/6lg@2x.png'),
+    //         url('../images/footer/lg/7lg@2x.png'),
+    //         url('../images/footer/lg/8lg@2x.png');
+    //     }
+    //   }
   }
 }
 
@@ -202,7 +202,7 @@
   color: #000000;
 
   transition-property: color, text-decoration;
-    @extend %animation;
+  @extend %animation;
 
   &:hover,
   &:focus {
@@ -249,7 +249,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  
+
   color: #505050;
 
   padding: 12px;
@@ -290,7 +290,7 @@
   font-weight: 500;
   line-height: 150%;
   font-size: 13px;
-  
+
   color: var(--primary-text-cl);
 
   padding: 11px 22px;
