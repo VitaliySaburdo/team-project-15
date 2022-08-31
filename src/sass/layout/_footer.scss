@@ -5,21 +5,25 @@
   @media screen and (max-width: 767px) {
     background-image:
       // right
-      url(../images/footer/sm/rightsm@1x.png),
+      url(../images/footer/sm/right1sm@1x.png),
+      url(../images/footer/sm/right2sm@1x.png),
       
       // bottom
       url(../images/footer/sm/sm@1x.png),
       // left
-      url(../images/footer/sm/leftsm@1x.png);
+      url(../images/footer/sm/left1sm@1x.png),
+      url(../images/footer/sm/left2sm@1x.png);
 
     background-repeat: no-repeat;
     background-position:
       // // right
-      top 30 right 0,
+      top 25px right 0,
+      top 0 right 0,
       // bottom
       bottom 0 center,
       // left    
-      top 132px left 0;
+      top 111px left 0,
+      top 137px left 0;
 
     //     @media (min-device-pixel-ratio: 2),
     //       (min-resolution: 192dpi),
