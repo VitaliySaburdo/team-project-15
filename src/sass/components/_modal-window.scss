@@ -178,50 +178,9 @@
   }
 }
 
-.form__attention-icon {
-  //     // position: absolute;
-  //     //     top: 31px;
-  //     //     left: 10px;
-  fill: #ff705d;
-}
-
 .form__attention {
   opacity: 0;
   margin: 0;
-}
-
-// .form__input:focus-within+.form__icon {
-//     fill: rgba(126, 177, 1, 1);
-// }
-
-.form__commentary {
-  // min-width: 370px;
-  width: 100%;
-  min-height: 120px;
-  padding: 12px 16px;
-  border-radius: 30px;
-  border: 1px solid rgba(18, 18, 18, 0.12);
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-  font-size: 12px;
-  line-height: calc(16.41 / 14);
-  letter-spacing: 0.01em;
-
-  resize: none;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__commentary:focus-within {
-  border-color: rgba(18, 18, 18, 0.12);
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-.form__field.commentary {
-  margin-bottom: 20px;
-}
-
-.form__commentary::placeholder {
-  color: #c4c4c4;
 }
 
 .form__button {
