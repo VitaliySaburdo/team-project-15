@@ -10,18 +10,16 @@
       // bottom
       url('../images/footer/sm/sm@1x.png'),
       // left
-      url('../images/footer/sm/left1sm@1x.png'),
-      url('../images/footer/sm/left2sm@1x.png');
+      url('../images/footer/sm/left1sm@1x.png'), url('../images/footer/sm/left2sm@1x.png');
 
     background-repeat: no-repeat;
     background-position:
       // // right
-      top 25px right 0px, top 0px right 0px,
+      top 25px right 0, top 0 right 0,
       // bottom
-      bottom 0px center,
-      // left
-      top 111px left 0px,
-      top 137px left 0px;
+      bottom 0 center,
+      // left    
+      top 111px left 0, top 137px left 0;
 
     //     @media (min-device-pixel-ratio: 2),
     //       (min-resolution: 192dpi),
@@ -55,7 +53,9 @@
       top 35px right 0, top 0 right 0,
       // bottom
       left 0 bottom 0,
-      left 136px bottom 0, left 197px bottom 0, right 233px bottom 0,
+      left 136px bottom 0, left 197px bottom 0,
+
+      right 233px bottom 0,
       right 94px bottom 0, right 0 bottom 0;
 
     // @media (min-device-pixel-ratio: 2),
