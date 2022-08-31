@@ -14,8 +14,14 @@
       url('../images/footer/sm/left2sm@1x.png');
 
     background-repeat: no-repeat;
-    background-position: top 25px right 0, top 0 right 0, bottom 0 center,
-      top 111px left 0, top 137px left 0;
+    background-position:
+      // // right
+      top 25px right 0, top 0 right 0,
+      // bottom
+      bottom 0 center,
+      // left
+      top 111px left 0,
+      top 137px left 0;
 
     //     @media (min-device-pixel-ratio: 2),
     //       (min-resolution: 192dpi),
