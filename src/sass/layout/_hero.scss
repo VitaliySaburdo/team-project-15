@@ -11,6 +11,20 @@
     padding-top: 136px;
     padding-bottom: 50px;
   }
+
+  // add orange
+        @media screen and (max-width: 767px) {
+          background-image:
+            // right
+      url('../images/footer/sm/right1sm@1x.png'),
+      url('../images/footer/sm/right2sm@1x.png');
+
+          background-repeat: no-repeat;
+          background-position:
+            // // right
+            top 105px right 0, top 80 right 0;
+        }
+  // end add orange
 }
 
 .hero__group {

@@ -4,64 +4,75 @@
 
   @media screen and (max-width: 767px) {
     background-image:
-    // right
-     url('../images/footer/orangesm.png'),
-      url('../images/footer/sprayorangesm.png'),
-// bottom
-      url('../images/footer/sm.png'),
-// left
-      url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
+      // right
+      url('../images/footer/sm/right1sm@1x.png'),
+      url('../images/footer/sm/right2sm@1x.png'),
+      // bottom
+      url('../images/footer/sm/sm@1x.png'),
+      // left
+      url('../images/footer/sm/left1sm@1x.png'), url('../images/footer/sm/left2sm@1x.png');
 
     background-repeat: no-repeat;
     background-position:
-    // // right
-     top 25px right 0, top 0 right 0,
-    // bottom
-     bottom 0 center,
-// left    
+      // // right
+      top 25px right 0, top 0 right 0,
+      // bottom
+      bottom 0 center,
+      // left    
       top 111px left 0, top 137px left 0;
+
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //         .footer {
+  //     // right
+  //       url('../images/footer/sm/right1sm@2x.png'),
+  //       url('../images/footer/sm/right2sm@2x.png'),
+  //       // bottom
+  //       url('../images/footer/sm/sm@2x.png'),
+  //       // left
+  //       url('../images/footer/sm/left1sm@2x.png'),
+  //       url('../images/footer/sm/left2sm@2x.png');
+  //         }
+  // }
   }
 
-//     background-image:
-//     // right
-//      url('../images/footer/orangesm.png'),
-//       url('../images/footer/sprayorangesm.png'),
-// // bottom
-//       url('../images/footer/top1sm.png'), url('../images/footer/top2sm.png'),
-//       url('../images/footer/top3sm.png'), url('../images/footer/top4sm.png'),
-// // left
-//       url('../images/footer/left1sm.png'), url('../images/footer/left2sm.png');
-
-//     background-repeat: no-repeat;
-//     background-position:
-//     // // right
-//      top 25px right 0, top 0 right 0,
-//     // bottom
-//      left 43px bottom 0, left 72px bottom 0, left 126px bottom 0, left 216px bottom 0,
-// // left    
-//       top 111px left 0, top 137px left 0;
-//   }
-
   @media screen and (min-width: 768px) {
-    background-image: url('../images/footer/orangemd@1x.png'),
-      url('../images/footer/sprayorangemd@1x.png'),
-      url('../images/footer/bottom1md.png'),
-      url('../images/footer/top1md@1x.png'),
-      url('../images/footer/top2md@1x.png'),
-      url('../images/footer/top3md@1x.png'),
-      url('../images/footer/top4md@1x.png'),
-      url('../images/footer/bottom2md.png');
+    background-image: url('../images/footer/md/right1md@1x.png'),
+      url('../images/footer/md/right2md@1x.png'),
+      url('../images/footer/md/bottom1md@1x.png'),
+      url('../images/footer/md/bottom2md@1x.png'),
+      url('../images/footer/md/bottom3md@1x.png'),
+      url('../images/footer/md/bottom4md@1x.png'),
+      url('../images/footer/md/bottom5md@1x.png'),
+      url('../images/footer/md/bottom6md@1x.png');
 
     background-repeat: no-repeat;
     background-position:
       // right
       top 35px right 0, top 0 right 0,
       // bottom
-      left -17px bottom 0,
+      left 0 bottom 0,
       left 136px bottom 0, left 197px bottom 0,
-      
+
       right 233px bottom 0,
       right 94px bottom 0, right 0 bottom 0;
+
+      // @media (min-device-pixel-ratio: 2),
+      //   (-webkit-min-device-pixel-ratio: 2),
+      //   (min-resolution: 192dpi),
+      //   (min-resolution: 2dppx) {
+      //     .footer {
+      //       url('../images/footer/md/right1md@2x.png'),
+      //         url('../images/footer/md/right2md@2x.png'),
+      //         url('../images/footer/md/bottom1md@2x.png'),
+      //         url('../images/footer/md/bottom2md@2x.png'),
+      //         url('../images/footer/md/bottom3md@2x.png'),
+      //         url('../images/footer/md/bottom4md@2x.png'),
+      //         url('../images/footer/md/bottom5md@2x.png'),
+      //         url('../images/footer/md/bottom6md@2x.png');
+      //     }
+      //   }
   }
 
   @media screen and (min-width: 1280px) {
@@ -69,8 +80,8 @@
       url('../images/footer/lg/2lg@1x.png'),
       url('../images/footer/lg/3lg@1x.png'),
       // lg orange
-      url('../images/footer/lg2.png'),
-      url('../images/footer/lgorange1.png'),
+      url('../images/footer/lg/4lg@1x.png'),
+      url('../images/footer/lg/5lg@1x.png'),
       url('../images/footer/lg/6lg@1x.png'),
       url('../images/footer/lg/7lg@1x.png'),
       url('../images/footer/lg/8lg@1x.png');
@@ -78,11 +89,27 @@
     background-repeat: no-repeat;
     background-position:
       // bottom
-      left 53px bottom 0, left 216px bottom 0, left 280px bottom 0,
+      left 69px bottom 0, left 232px bottom 0, left 296px bottom 0,
       // lg orange
-      left 340px bottom 0,
-      left 450px bottom 0, right 282px bottom 0, right 134px bottom 0,
-      right 16px bottom 0;
+      left 356px bottom 0,
+      left 466px bottom 0, right 198px bottom 0, right 150px bottom 0,
+      right 32px bottom 0;
+
+      // @media (min-device-pixel-ratio: 2),
+      //   (min-resolution: 192dpi),
+      //   (min-resolution: 2dppx) {
+      //     .footer {
+      //       background-image: url('../images/footer/lg/1lg@2x.png'),
+      //         url('../images/footer/lg/2lg@2x.png'),
+      //         url('../images/footer/lg/3lg@2x.png'),
+      //         // lg orange
+      //         url('../images/footer/lg/4lg@2x.png'),
+      //         url('../images/footer/lg/5lg@2x.png'),
+      //         url('../images/footer/lg/6lg@2x.png'),
+      //         url('../images/footer/lg/7lg@2x.png'),
+      //         url('../images/footer/lg/8lg@2x.png');
+      //     }
+      //   }
   }
 }
 
@@ -255,7 +282,6 @@
   }
 }
 
-//прижать кнопку вправо
 .footer__btn {
   display: inline-flex;
   text-align: center;
