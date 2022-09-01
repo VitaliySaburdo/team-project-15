@@ -135,6 +135,8 @@
   &:focus {
     background-color: var(--accent-btn-cl);
   }
+  transition-property: background-color;
+  @extend %animation;
 
   @media screen and (min-width: 479px) {
   }
