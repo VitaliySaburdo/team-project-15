@@ -103,13 +103,21 @@
   }
 }
 
+.favorites__img img {
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.favorites__link:hover .favorites__img img {
+  transform: scale(1.2);
+}
+
 .favorites__link:hover,
 .favorites__link:focus,
 .favorites__link:active {
   border-color: var(--menu-avtiv-border-cl);
   border-color: var(--menu-avtiv-border-cl);
-  animation: rotate-center 1s none infinite ease-out 0.5s;
 
+  // animation: rotate-center 1s none infinite ease-out 0.5s;
   // @-webkit-keyframes rotate-center {
   //   0% {
   //     -webkit-transform: rotate(0);
