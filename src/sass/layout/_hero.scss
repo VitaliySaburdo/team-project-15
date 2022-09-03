@@ -216,3 +216,14 @@
     top: 290px;
   }
 }
+.hero__slider .swiper-pagination-bullet {
+  background-color: var(--accent-secondary-btn--cl);
+  @media screen and (min-width: 1280px) {
+    width: 15px;
+    height: 15px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    width: 10px;
+    height: 10px;
+  }
+}
