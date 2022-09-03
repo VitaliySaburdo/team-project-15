@@ -202,3 +202,17 @@
   width: 16px;
   height: 29px;
 }
+.hero__slider--container .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}
+
+.hero__slider .swiper-pagination {
+  z-index: 1000;
+  @media screen and (min-width: 1280px) {
+    top: 538px;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    top: 290px;
+  }
+}
