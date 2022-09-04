@@ -55,7 +55,9 @@
     line-height: 120%;
   }
 }
-
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2s;
+}
 .hero__txt {
   font-size: 14px;
   font-weight: 400;
