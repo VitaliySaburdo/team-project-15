@@ -1,32 +1,16 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
+    openModalBtn: document.querySelectorAll("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    backdrop: document.querySelector("[data-modal]"),
+    modal: document.querySelector("[data-modal]"),
   };
-
-  refs.openModalBtn.addEventListener("click", onOpenModal);
-  refs.closeModalBtn.addEventListener("click", onCloseModal);
-  refs.backdrop.addEventListener("click", onBackdropClick);
-
   
+  refs.openModalBtn.forEach(btn => {btn.addEventListener("click", toggleModal)
 
-  function onOpenModal() {
-    refs.backdrop.classList.remove("is-hidden");
-    window.addEventListener('keydown', onEscPressKey)
-  }
-  function onCloseModal() {
-    refs.backdrop.classList.add("is-hidden");
-    window.removeEventListener('keydown',onEscPressKey)
-  }
-  function onBackdropClick(evt) {
-    if (evt.currentTarget === evt.target) {
-    onCloseModal()
-    }
-  }
-  function onEscPressKey(evt) {
-    if (evt.code === 'Escape') {
-      onCloseModal()
-    }
+});
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+  function toggleModal() {
+    document.body.classList.toggle("modal-open")
+    refs.modal.classList.toggle("is-hidden");
   }
 })();
