@@ -58,7 +58,7 @@ to GitHub.
 ### Deployment status
 
 The deployment status of the latest commit is displayed with an icon next to its
-ID.
+ID. ![Deploy status](./assets/status.png)
 
 - **Yellow color** - the project is being built and deployed.
 - **Green color** - deployment completed successfully.
