@@ -14,11 +14,12 @@ dishes.
 ## Team
 
 - :man:
-  [**Team Lead Frontend & Developer:** Saburdo Vitaliy](https://github.com/haber-viacheslav)
+  [**Team Lead Frontend & Developer:** Saburdo Vitaliy](https://github.com/VitaliySaburdo)
 - :woman:
-  [**Scrum master & Developer Frontend :** Nataliiy Chervonnykh](https://github.com/daria31v)
-- :man: [**Developer Frontend:** Evgeny Veliki](https://github.com/SerhiySBV)
+  [**Scrum master & Developer Frontend :** Nataliiy Chervonnykh](https://github.com/NataliiyChervonnykh)
+- :man: [**Developer Frontend:** Evgeny Veliki](https://github.com/EvgenyVeliki)
 - :woman: [**Developer Frontend:** Olga Shapran](https://github.com/OlgaShapran)
+- :man: [**Developer Frontend:** NytrammartyN](https://github.com/NytrammartyN)
 
 ## Technologies
 
