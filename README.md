@@ -1,10 +1,11 @@
 # Food Sta
 
-- [Introduction](##Introduction)
-- [Technologies](##Technologies)
-- [Team](##Team)
-- [How to Install and Run the Project](##How-to-Install-and-Run-the-Project)
-- [How to Use the Project](##How-to-Use-the-Project)
+## Table of contents
+
+- [Technologies](#Technologies)
+- [Team](#Team)
+- [How to Install and Run the Project](#How-to-Install-and-Run-the-Project)
+- [How to Use the Project](#How-to-Use-the-Project)
 
 ## Introduction
 
