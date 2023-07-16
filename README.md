@@ -8,8 +8,7 @@
 
 ## Introduction
 
-I present to your attention the website of the service for ordering restaurant
-dishes.
+#### I present to your attention the team project it's website of the service for ordering restaurant dishes.
 
 ## Team
 
