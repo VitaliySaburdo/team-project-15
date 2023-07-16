@@ -2,7 +2,7 @@
 
 - [Introduction](#Introduction)
 - [Technologies](#Technologies)
-- [Backend](#Backend)
+- [Team](#Team)
 - [How to Install and Run the Project](#How-to-Install-and-Run-the-Project)
 - [How to Use the Project](#How-to-Use-the-Project)
 
@@ -10,6 +10,15 @@
 
 I present to your attention the website of the service for ordering restaurant
 dishes.
+
+## Team
+
+- :man:
+  [**Team Lead Frontend & Developer:** Saburdo Vitaliy](https://github.com/haber-viacheslav)
+- :woman:
+  [**Scrum master & Developer Frontend :** Nataliiy Chervonnykh](https://github.com/daria31v)
+- :man: [**Developer Frontend:** Evgeny Veliki](https://github.com/SerhiySBV)
+- :woman: [**Developer Frontend:** Olga Shapran](https://github.com/OlgaShapran)
 
 ## Technologies
 
