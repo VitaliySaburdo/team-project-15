@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Food, Price: $5.99" />
+    <!-- Title name -->
+    <title>FoodSta</title>
 
-  <meta name="description" content="Food, Price: $5.99" />
-  <!-- Title name -->
-  <title>FoodSta</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonnts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+    <!-- Normalize start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
 
-  <!-- Normalize start -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- animation start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animation end -->
 
-  <!-- animation start -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- AOS animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <!-- animation end -->
+    <!-- Swiper slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-  <!-- Swiper slider -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" href="./images/favicon.png" />
-</head>
+  <!-- Body -->
 
-<!-- Body -->
-
-<body>
-  <!-- Header -->
-  <include src="./partials/header.html"></include>
-  <!-- mobile-menu -->
-  <include src="./partials/mobile-menu.html"></include>
-  <!-- Main -->
-  <main>
-    <!-- Hero -->
-    <include src="./partials/hero.html"></include>
-    <!-- Offerings -->
-    <include src="./partials/offerings.html"></include>
-    <!-- Favorites -->
-    <include src="./partials/favorites.html"></include>
-    <!-- Customers Say -->
-    <include src="./partials/customers_say.html"></include>
-    <!-- Subscribe -->
-    <include src="./partials/subscribe.html"></include>
-  </main>
-  <!-- Footer -->
-  <include src="./partials/footer.html"></include>
-  <!-- Modal -->
-  <include src="./partials/modal-window.html"></include>
-  <!-- Scripts -->
-  <script type="module" src="./index.js"></script>
-  <!-- Swiper slider -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <!-- AOS aniamtion library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/animations.js"></script>
-</body>
-
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+    <!-- mobile-menu -->
+    <include src="./partials/mobile-menu.html"></include>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <include src="./partials/hero.html"></include>
+      <!-- Offerings -->
+      <include src="./partials/offerings.html"></include>
+      <!-- Favorites -->
+      <include src="./partials/favorites.html"></include>
+      <!-- Customers Say -->
+      <include src="./partials/customers_say.html"></include>
+      <!-- Subscribe -->
+      <include src="./partials/subscribe.html"></include>
+    </main>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+    <!-- Modal -->
+    <include src="./partials/modal-window.html"></include>
+    <!-- Scripts -->
+    <script type="module" src="./index.js"></script>
+    <!-- Swiper slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS animation library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
+  </body>
 </html>
